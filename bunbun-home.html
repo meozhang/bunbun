@@ -7,7 +7,10 @@
     <title>Bunbun Bake Shop</title>
 
     <!--GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Offside&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
     
     <link rel="logo_favicon" href="assets/logo_favicon.png">
 
@@ -18,49 +21,56 @@
     <div class = "container">
       
       <!--Header-->
-      <header>
-        <h1>BUN BUN</h1>
-        <h3>bake shop</h3>
-        <img src="/assets/home_hero image.jpg" alt= "bake shop home image">
-        <nav>
-          <ul>
-            <li>home</li>
-            <li>pastry</li>
-            <li>contact</li>
-          </ul>
-          <button>cart</button>
-        </nav>
+      <header class="container">
+        <div class="text-overlay">
+          <h1 class="centered">BUN BUN</h1>
+          <img src="assets/logo drawing_white.png" alt="bunbun logo" style="height:100px; width:auto; display:inline-block;"/>
+          <h3>bake shop</h3>
+        </div>
       </header>
-      
+
+      <!--Navigation-->
+      <nav>
+        <ul>
+          <li>home</li>
+          <li>pastry</li>
+          <li>contact</li>
+        </ul>
+        <button>cart</button>
+      </nav>
   
       <main>
         <!--Seasonal Special-->
-        <section>
-          <h2>seasonal special</h1>
-          <div class="container">
-              <h3>PUMPKIN SPICE</h3>
-              <img src="assets/Seasonal_Pumpkin Spice.jpg" alt="seasonal special: pumpkin spice"/> 
-          </div>
-          <div> 
-              <h3>CARAMEL PECAN</h3>
-              <img src="assets/Seasonal_pecan.jpg" alt="seaonal special: caramel pecan"/>
-          </div> 
+        <section id="seasonal">
+            <div id="sea_title">
+              <h2>seasonal special</h2>
+            </div>
+            <div class ="box" id= 'sea_1'>
+                <h3>PUMPKIN SPICE</h3>
+            </div>
+            <div class ="box" id='sea_2'> 
+                <h3>CARAMEL PECAN</h3>
+            </div> 
         </section>
 
-        <section>
+        <section id="product_lib">
           <h2>our pastries</h2>
-          <ul>
-            <li>all</li>
-            <li>gluten free</li>
-            <li>nutty</li>
-            <li>fruity</li>
-          </ul>
+          <div id = "product_filter">
+              <ul>
+                <li>all</li>
+                <li>gluten free</li>
+                <li>nutty</li>
+                <li>fruity</li>
+              </ul>
+          </div>
           <!--Product A -->
-          <div class="product-block">
-              <img src="assets/product_original.jpg" alt="product: original bun"/>
-              <button>learn more</button>
-              <h3>original</h3>
-              <h4>$3.50</h4>
+          <div class="product-block" id="pro_a">
+              
+              <img src="assets/product_original.jpg" alt="product: original bun" style ='width:240px; height:240px'/>
+              <div>
+                  <h3>original</h3>
+                  <h4>$3.50</h4>
+              </div>
               <p>This delicious bunbun original  will bright up your mornings!</p>
               <ul>
                 <li>1</li>
@@ -72,9 +82,8 @@
           </div>
 
           <!--Product B -->
-          <div class="product-block">
-              <img src="assets/product_blueberry.jpg" alt="product: blueberry bun"/>
-              <button>learn more</button>
+          <div class="product-block" id="pro_b">
+              <img src="assets/product_blueberry.jpg" alt="product: blueberry bun" style ='width:240px; height:240px'/>
               <h3>blueberry</h3>
               <h4>$4.00</h4>
               <p>Always blueberry season! Made with love and local berries.</p>
@@ -88,9 +97,8 @@
           </div>
 
           <!--Product C -->
-          <div class="product-block">
-              <img src="assets/product_walnut.jpg" alt="product: walnut bun"/>
-              <button>learn more</button>
+          <div class="product-block" id="pro_c">
+              <img src="assets/product_walnut.jpg" alt="product: walnut bun" style ='width:240px; height:240px'/>
               <h3>walnut</h3>
               <h4>$4.00</h4>
               <p>Tired of work and study? Get some awesome walnuts.</p>
@@ -104,10 +112,9 @@
           </div>
 
           <!--Product D -->
-          <div class="product-block">
-              <img src="assets/product_original gfree.jpg" alt="product: original bun gluten-free"/>
-              <button>learn more</button>
-              <h3>original (gluten-free)</h3>
+          <div class="product-block" id="pro_d">
+              <img src="assets/product_original gfree.jpg" alt="product: original bun gluten-free" style ='width:240px; height:240px'/>
+              <h3>gluten-free</h3>
               <h4>$3.50</h4>
               <p>The delicious bunbun original, even better, gluten free.</p>
               <ul>
@@ -120,9 +127,8 @@
           </div>
 
           <!--Product E -->
-          <div class="product-block">
-              <img src="assets/Product_pumpkin spice.jpg" alt="product: pumpkin spice bun"/>
-              <button>learn more</button>
+          <div class="product-block" id="pro_e">
+              <img src="assets/Product_pumpkin spice.jpg" alt="product: pumpkin spice bun" style ='width:240px; height:240px'/>
               <h3>pumpkin spice</h3>
               <h4>$4.00</h4>
               <p>Begin the beautiful fall with the sweet and flavorful bun.</p>
@@ -136,9 +142,8 @@
           </div>
 
           <!--Product F -->
-          <div class="product-block">
-              <img src="assets/product_pecan.jpg" alt="product: pecan caramel bun"/>
-              <button>learn more</button>
+          <div class="product-block" id="pro_f">
+              <img src="assets/product_pecan.jpg" alt="product: pecan caramel bun" style ='width:240px; height:240px'/>
               <h3>pecan caramel</h3>
               <h4>$4.00</h4>
               <p>Doubled your favorite flavors, pecan and caramel</p>
@@ -153,7 +158,7 @@
         </section>
 
         <!-- Contact Us-->
-        <section>
+        <section id="home_contact">
             <h2>other flavours you like?</h2>
             <h3>let us know!</h3>
             <p>Craving a special flavor? Want to let us know what’s your favorite flavors? Please contact us! We are proud to offer rotating seasonal specials, limited time surprise flavor pop-ups, cutomization for special occasions(10 days in advance). We’d love to hear from you!</p>

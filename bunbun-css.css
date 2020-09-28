@@ -1,0 +1,335 @@
+/* sections */ 
+body{
+    margin:0px;
+}
+
+header{
+    height:400px;
+    padding: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("assets/home_hero\ image.jpg");
+    background-size: 100%;
+    background-position: 25% 50%;
+    }
+
+nav{
+    background-color:#E9C467;
+    text-align: center;
+    min-width: 500px;
+  }
+
+section{
+    margin: 60px 0px 100px 0px;
+}
+
+footer {
+    background-color:#E9C467;
+    text-align: center;
+    min-width: 500px;
+  }
+
+
+/*fonts*/ 
+
+h1 {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 120px;
+    font-weight: 300;
+    color: white;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px 20px 0px 0px;
+}
+
+h2 {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 48px;
+    font-weight: 500;
+    color:#7C5B04;
+    display: block;
+    text-align: center;
+    margin:0px;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight:normal;
+}
+
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight:bold;
+    color:#E9C467;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight:200;
+    display: block;
+}
+
+button{
+    border-radius: 20px;
+    border: solid 2px #E9C467;
+    background-color: #E9C467;
+    width: 100%;
+    height:28px;
+    text-align: center;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight:normal; 
+}
+button:hover{
+    background-color: #7C5B04;
+    border:#7C5B04;
+    color: white;
+}
+
+ul{
+    margin-top: 0px;
+    margin-bottom:0px;
+    padding-left: 0px;
+    align-content: center;
+}
+
+li{
+    display: inline-block;
+    align-items: center;
+}
+
+
+/* grid for section - seasonal special */
+
+#seasonal {
+    display: grid;
+    grid-template-rows: 50px 200px;
+    grid-template-columns: 2fr 3fr 3fr 2fr; 
+    grid-gap: 20px 20px;
+
+    justify-items: center;
+    justify-content: center;
+    align-items:stretch;
+    align-content: center;
+  }
+#seasonal #sea_title{
+    grid-area: 1 / 2 / 2 / 4 ;
+    width:100%;
+}
+
+#seasonal #sea_1{
+    grid-area: 2 / 2 / 3 / 3 ;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.25)), url(assets/Seasonal_Pumpkin\ Spice.jpg);
+    background-size: 100%;
+}
+
+#seasonal #sea_2{
+    grid-area: 2 / 3 / 3 / 4 ;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.25)), url(assets/Seasonal_pecan.jpg);
+    background-size: 100%;
+} 
+
+#seasonal h3{
+    margin-top: 25%;
+}
+
+/* grid for section - product library */
+
+#product_lib{
+    display: grid;
+    grid-template-rows: 50px 50px 420px 420px;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr; 
+    grid-gap: 20px 20px;
+
+    justify-items: center;
+    justify-content: center;
+    align-items:stretch;
+    align-content: center;
+}
+
+#product_lib h2{
+    grid-area: 1/2/2/5;
+    width:100%
+}
+
+#product_filter{
+    grid-area: 2/2/3/5;
+    width:100%
+}
+
+#product_filter ul{
+    text-align: center;
+}
+
+
+#product_filter li{
+    border-radius: 20px;
+    border: solid 2px #E9C467;
+    min-width: 60px;
+    max-width: ;
+    height:28px;
+    text-align: center;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight:normal; 
+}
+
+#pro_a{
+    grid-area: 3/2/4/3;
+    width:100%
+    outline: solid 2px black;
+}
+
+#pro_b{
+    grid-area: 3/3/4/4;
+    width:100%
+    outline: solid 2px black;
+}
+
+#pro_c{
+    grid-area: 3/4/4/5;
+    width:100%
+    outline: solid 2px black;
+}
+
+#pro_d{
+    grid-area: 4/2/5/3;
+    width:100%
+    outline: solid 2px black;
+}
+
+#pro_e{
+    grid-area: 4/3/5/4;
+    width:100%
+    outline: solid 2px black;
+}
+
+#pro_f{
+    grid-area: 4/4/5/5;
+    width:100%
+    outline: solid 2px black;
+}
+
+.product-block{
+    width:240px;
+    align-content: center;
+}
+
+.product-block h3{
+    margin:0px;
+    display:inline-block;
+}
+
+.product-block h4{
+    margin:0px;
+    display:inline-block;
+    float: right;
+}
+
+.product-block p{
+    display: block;
+    margin: 12px 0px 12px 0 px;
+}
+
+.product-block ul{
+    text-align: center;
+}
+
+
+.product-block li{
+    border-radius: 20px;
+    border: solid 2px #E9C467;
+    width: 48px;
+    height:28px;
+    text-align: center;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight:normal; 
+}
+
+.product-block li:hover{
+    background-color: #E9C467;
+}
+
+.product-block button{
+    margin-top: 12px;
+}
+
+/* grid for section - contact us */
+
+#home_contact{
+    display: grid;
+    grid-template-rows: 50px 25px 75px 25px;
+    grid-template-columns: 3fr 4fr 3fr; 
+    grid-gap: 20px 20px;
+
+    justify-items: center;
+    justify-content: center;
+    align-items:stretch;
+    align-content: center;
+}
+
+#home_contact h2{
+    grid-area: 1/2/2/3;
+}
+ 
+#home_contact h3{
+    grid-area: 2/2/3/3;
+    margin:0px;
+    color: #7C5B04;
+}
+
+#home_contact p {
+    grid-area: 3/2/4/3;
+    margin:0px;
+}
+#home_contact button{
+    grid-area: 4/2/5/3;
+    width: 200px;
+    margin-top: 16px;
+}
+
+
+/* CLASS - */ 
+.box{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.container {
+    position: relative;
+}
+
+.text-overlay{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+/*special ones*/ 
+
+nav li{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 5px 20px 5px 20px;
+}
+nav button{
+    display: inline-block;
+}
