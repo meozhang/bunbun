@@ -3,18 +3,11 @@ body{
     margin:0px;
 }
 
-header{
-    height:400px;
-    padding: 0px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("assets/home_hero\ image.jpg");
-    background-size: 100%;
-    background-position: 25% 50%;
-    }
-
 nav{
     background-color:#E9C467;
     text-align: center;
-    min-width: 500px;
+    height: 75px;
+    vertical-align:middle;
   }
 
 section{
@@ -29,6 +22,10 @@ footer {
 
 
 /*fonts*/ 
+
+a{
+    text-decoration: none;
+}
 
 h1 {
     font-family: 'Reenie Beanie', cursive;
@@ -55,6 +52,7 @@ h3{
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
     font-weight:normal;
+    margin:0px;
 }
 
 h4{
@@ -62,6 +60,7 @@ h4{
     font-size: 24px;
     font-weight:bold;
     color:#E9C467;
+    margin:0px;
 }
 p{
     font-family: 'Raleway', sans-serif;
@@ -69,6 +68,7 @@ p{
     font-weight:200;
     display: block;
 }
+
 
 button{
     border-radius: 20px;
@@ -86,6 +86,7 @@ button:hover{
     background-color: #7C5B04;
     border:#7C5B04;
     color: white;
+    transition: 250ms;
 }
 
 ul{
@@ -95,18 +96,67 @@ ul{
     align-content: center;
 }
 
-li{
+li, a{
     display: inline-block;
     align-items: center;
 }
 
 
-/* grid for section - seasonal special */
+/* navigation */
+nav button{
+    display: inline-block;
+    float: right;
+    background-color: white;
+    width: 120px;
+    height:50px;
+    margin-right: 50px;
+    margin-top:-40px;
+}
+nav button a{
+    font-family:'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    
+    color: #E9C467;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
-#seasonal {
+nav ul{
+    padding-top: 24px;
+    padding-left:75px;
+    display: inline-block;
+    width: 800px;
+    margin: auto;
+}
+
+nav li a{
+    font-family:'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 5px 40px 5px 40px;
+}
+
+nav li a:hover{
+    color: #7C5B04;
+    transition: 250ms;
+}
+
+
+/* grid for section - your cart */
+
+#cart {
     display: grid;
-    grid-template-rows: 50px 200px;
-    grid-template-columns: 2fr 3fr 3fr 2fr; 
+    grid-template-rows: 30px 10px 110px 10px 110px 10px 75px 50px;
+    grid-template-columns: 2fr 5fr 3fr; 
     grid-gap: 20px 20px;
 
     justify-items: center;
@@ -114,32 +164,100 @@ li{
     align-items:stretch;
     align-content: center;
   }
-#seasonal #sea_title{
-    grid-area: 1 / 2 / 2 / 4 ;
+
+#cart #cont-shop{
+    grid-area: 1 / 2 / 2 / 3 ;
+    width:300px;
+}
+
+#cart #line-1{
+    grid-area: 2 / 2 / 3 / 3 ; 
+}
+
+#cart #cart-1{
+    grid-area: 3 / 2 / 4 / 3 ;
     width:100%;
+    height:100%;
 }
 
-#seasonal #sea_1{
-    grid-area: 2 / 2 / 3 / 3 ;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.25)), url(assets/Seasonal_Pumpkin\ Spice.jpg);
-    background-size: 100%;
+#cart #line-2{
+    grid-area: 4 / 2 / 5 / 3 ; 
 }
 
-#seasonal #sea_2{
-    grid-area: 2 / 3 / 3 / 4 ;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.25)), url(assets/Seasonal_pecan.jpg);
-    background-size: 100%;
-} 
+#cart #cart-2{
+    grid-area: 5 / 2 / 6 / 3 ;
+    width:100%;
+    height:100%;
+}
 
-#seasonal h3{
-    margin-top: 25%;
+#cart #line-3{
+    grid-area: 6 / 2 / 7 / 3 ; 
+}
+
+.hline{
+    height:0.1px;
+    width:100%;
+    border-top: solid 2px #E9C467;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#cart img{
+    width:110px;
+    height:110px;
+    float:left;
+    margin-right:20px;
+}
+
+#cart .choice{
+    font-size: 14px;
+    color:#5A5A5A;
+    margin-right: 10px;
+}
+
+#cart .sm-button{
+    font-family:'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    
+    background-color: white;
+    padding: 1px 10px 1px 10px;
+    border-radius: 20px;
+    border: solid 2px #E9C467;
+    color: #E9C467;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#cart .sm-button:hover{
+    background-color:#E9C467;
+    color: white;
+    transition: 250ms;
+}
+
+#cart h4{
+    float:right;
+    vertical-align: bottom;
+    margin-top: -30px;
+}
+.sym-close{
+    font-size: 20px;
+    color:#5A5A5A;
+    float:right;
+    vertical-align: top;
+}
+
+.sym-close:hover{
+    color:#E9C467;
+    transition: 250ms;
 }
 
 /* grid for section - product library */
 
 #product_lib{
     display: grid;
-    grid-template-rows: 50px 50px 420px 420px;
+    grid-template-rows: 50px 50px 440px;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr; 
     grid-gap: 20px 20px;
 
@@ -154,28 +272,6 @@ li{
     width:100%
 }
 
-#product_filter{
-    grid-area: 2/2/3/5;
-    width:100%
-}
-
-#product_filter ul{
-    text-align: center;
-}
-
-
-#product_filter li{
-    border-radius: 20px;
-    border: solid 2px #E9C467;
-    min-width: 60px;
-    max-width: ;
-    height:28px;
-    text-align: center;
-
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight:normal; 
-}
 
 #pro_a{
     grid-area: 3/2/4/3;
@@ -195,23 +291,6 @@ li{
     outline: solid 2px black;
 }
 
-#pro_d{
-    grid-area: 4/2/5/3;
-    width:100%
-    outline: solid 2px black;
-}
-
-#pro_e{
-    grid-area: 4/3/5/4;
-    width:100%
-    outline: solid 2px black;
-}
-
-#pro_f{
-    grid-area: 4/4/5/5;
-    width:100%
-    outline: solid 2px black;
-}
 
 .product-block{
     width:240px;
@@ -253,45 +332,13 @@ li{
 
 .product-block li:hover{
     background-color: #E9C467;
+    transition: 250ms;
 }
 
 .product-block button{
     margin-top: 12px;
 }
 
-/* grid for section - contact us */
-
-#home_contact{
-    display: grid;
-    grid-template-rows: 50px 25px 75px 25px;
-    grid-template-columns: 3fr 4fr 3fr; 
-    grid-gap: 20px 20px;
-
-    justify-items: center;
-    justify-content: center;
-    align-items:stretch;
-    align-content: center;
-}
-
-#home_contact h2{
-    grid-area: 1/2/2/3;
-}
- 
-#home_contact h3{
-    grid-area: 2/2/3/3;
-    margin:0px;
-    color: #7C5B04;
-}
-
-#home_contact p {
-    grid-area: 3/2/4/3;
-    margin:0px;
-}
-#home_contact button{
-    grid-area: 4/2/5/3;
-    width: 200px;
-    margin-top: 16px;
-}
 
 
 /* CLASS - */ 
@@ -319,17 +366,3 @@ li{
 
 /*special ones*/ 
 
-nav li{
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin: 5px 20px 5px 20px;
-}
-nav button{
-    display: inline-block;
-}
