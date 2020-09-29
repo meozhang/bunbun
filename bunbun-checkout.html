@@ -24,8 +24,8 @@
       <nav>
         <ul>
           <li><a href='bunbun-home.html'>home</a></li>
-          <li><a href='bunbun-home.html/#product_lib'>pastry</a></li>
-          <li><a href='bunbun-home.html/#product_lib'>contact</a></li>
+          <li><a href='bunbun-home.html#product_lib'>pastry</a></li>
+          <li><a href='bunbun-home.html#product_lib'>contact</a></li>
           
         </ul>
         <button><a href='bunbun-checkout.html'>cart</a></button>  
@@ -34,7 +34,7 @@
       <main>
         <!--Your Cart-->
         <section id="cart">
-            <button id="cont-shop"><a>continue shopping</a></button>
+            <button id="cont-shop"><a> &#8672; continue shopping</a></button>
             <div class= "hline" id="line-1"></div>
 
             <!-- 1st Item -->
@@ -71,7 +71,38 @@
 
             <div class= "hline" id="line-3"></div>
 
+            <!-- SUB TOTAL -->
+            <div id="subtotal">
+                <h3>subtotal</h3>
+                <p>(delivery + tax may apply)</p>
+                <h4>$23.55</h4>
+            </div>
 
+            <div id="checkout">
+                <button><a>checkout</a></button>
+                <p>next: delivery / pick up</p>
+            </div>
+
+            <!--side progress bar -->
+            <div id="progress-bar">
+              <div id="progress-cart">
+                <div class="circle-active"></div>
+                <p>your cart</p>
+              </div>
+              <div id="progress-deli">
+                <div class="circle"></div>
+                <p>deliver/pickup</p>
+              </div>
+              <div id="progress-pay">
+                <div class="circle"></div>
+                <p>payment</p>
+              </div>
+              <div id="progress-confirm">
+                <div class="circle"></div>
+                <p>confirm</p>
+              </div>
+            </div>
+            
         </section>
 
         <section id="product_lib">

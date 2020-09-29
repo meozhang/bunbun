@@ -159,15 +159,18 @@ nav li a:hover{
     grid-template-columns: 2fr 5fr 3fr; 
     grid-gap: 20px 20px;
 
-    justify-items: center;
+    /* justify-items: center;
     justify-content: center;
     align-items:stretch;
-    align-content: center;
+    align-content: center; */
   }
 
 #cart #cont-shop{
     grid-area: 1 / 2 / 2 / 3 ;
-    width:300px;
+    width: 250px;
+    align-items: start;
+    display: inline-block;
+    float: left;
 }
 
 #cart #line-1{
@@ -192,6 +195,18 @@ nav li a:hover{
 
 #cart #line-3{
     grid-area: 6 / 2 / 7 / 3 ; 
+}
+
+#cart #subtotal{
+    grid-area: 7 / 2 / 8 / 3 ;
+    width:100%;
+}
+
+#cart #checkout {
+    grid-area: 8 / 2 / 9 / 3;
+    width: 250px;
+    justify-self: right;
+    text-align: center;
 }
 
 .hline{
@@ -241,6 +256,13 @@ nav li a:hover{
     vertical-align: bottom;
     margin-top: -30px;
 }
+
+#subtotal h4{
+    vertical-align: top;
+    font-size: 28px;
+    margin-top: -60px;
+}
+
 .sym-close{
     font-size: 20px;
     color:#5A5A5A;
@@ -252,6 +274,38 @@ nav li a:hover{
     color:#E9C467;
     transition: 250ms;
 }
+
+
+/* your cart - DRAWING progress bar*/
+#cart #progress-bar{
+    grid-area: 2 / 3 / 9 / 4;
+    justify-self: center;
+}
+
+.circle-active, .circle{
+    height:15px;
+    width:15px;
+    border-radius: 15px;
+    border: solid 1px #E9C467;
+    background-color: #E9C467;
+    display: inline-block;
+}
+
+.circle{
+    height:15px;
+    width:15px;
+    border-radius: 15px;
+    border: solid 1px #E9C467;
+    background-color: white;
+    display: inline-block;
+}
+
+#progress-bar p{
+    display:inline-block;
+    margin: 0px 10px 30px 10px;
+}
+
+
 
 /* grid for section - product library */
 
