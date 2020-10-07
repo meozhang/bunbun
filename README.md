@@ -10,6 +10,6 @@ Pages built:
 
 links between pages should be all active.
 
-resources:
+resources:   
 1.create a modal with css: https://www.w3schools.com/howto/howto_css_modals.asp   
 2.styling radio button: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
