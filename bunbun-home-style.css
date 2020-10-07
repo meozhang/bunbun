@@ -16,6 +16,13 @@ nav{
     text-align: center;
     height: 75px;
     vertical-align:middle;
+    
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
   }
 
 section{
@@ -26,6 +33,11 @@ footer {
     background-color:#E9C467;
     text-align: center;
     min-width: 500px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items:center;
+    align-content: center;
   }
 
 
@@ -104,6 +116,15 @@ li, a{
 
 
 /* navigation */
+
+#nav-links{
+    grid-column: 2/3;
+}
+
+#nav-cart{
+    grid-column:3/4;
+}
+
 nav button{
     display: inline-block;
     float: right;
@@ -111,29 +132,18 @@ nav button{
     width: 120px;
     height:50px;
     margin-right: 50px;
-    margin-top:13px;
-}
-nav button a{
-    font-family:'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    
-    color: #E9C467;
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
+    margin-top:6px;
+    cursor:pointer;
 }
 
+
 nav ul{
-    padding-top: 24px;
-    padding-left:180px;
     display: inline-block;
     width: 800px;
     margin: auto;
 }
 
-nav li a{
+li a{
     font-family:'Raleway', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -144,9 +154,10 @@ nav li a{
     text-decoration: none;
     color: #FFFFFF;
     margin: 5px 40px 5px 40px;
+    cursor:pointer;
 }
 
-nav li a:hover{
+li a:hover{
     color: #7C5B04;
     transition: 250ms;
 }
@@ -236,19 +247,6 @@ nav li a:hover{
     text-align: center;
 }
 
-
-#product_filter li{
-    border-radius: 20px;
-    border: solid 2px #E9C467;
-    padding: 0px 15px 0px 15px;
-    min-width: 60px;
-    height:28px;
-    text-align: center;
-
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight:normal; 
-}
 
 #pro_a{
     grid-area: 3/2/4/3;
@@ -498,3 +496,7 @@ nav li a:hover{
     margin-top: 16px;
 }
 
+/*footer styling*/
+#footer-links{
+    grid-column: 2/3;
+}

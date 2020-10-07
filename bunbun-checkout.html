@@ -22,17 +22,19 @@
 
       <!--Navigation-->
       <nav>
-        <ul>
+        <ul id="nav-links">
           <li><a href='bunbun-home.html'>home</a></li>
           <li><a href='bunbun-home.html#product_lib'>pastry</a></li>
-          <li><a href='bunbun-home.html#product_lib'>contact</a></li>
+          <li><a href='bunbun-home.html#home_contact'>contact</a></li>  
         </ul>
       </nav>
   
       <main>
         <!--Your Cart-->
         <section id="cart">
-            <button id="cont-shop"><a href="bunbun-home.html#product_lib"> &#8672; continue shopping</a></button>
+          <div id="cont-shop">
+              <a href="bunbun-home.html#product_lib"> <button class="white-but" style="width:250px;"> &#8672; continue shopping</button></a>
+          </div>
             <div class= "hline" id="line-1"></div>
 
             <!-- 1st Item -->
@@ -77,7 +79,7 @@
             </div>
 
             <div id="checkout">
-                <button><a href="bunbun-deliver.html">checkout</a></button>
+                <a href="bunbun-deliver.html"><button class="yellow-but" style="width:250px;">checkout</button></a>
                 <p>next: pick up / delivery</p>
             </div>
 
@@ -120,7 +122,7 @@
                 <li>6</li>
                 <li>12</li>
               </ul>
-              <button>add to cart</button>
+              <button button class="yellow-but">add to cart</button>
           </div>
 
           <!--Product B -->
@@ -135,7 +137,7 @@
                 <li>6</li>
                 <li>12</li>
               </ul>
-              <button>add to cart</button>
+              <button button class="yellow-but">add to cart</button>
           </div>
 
           <!--Product C -->
@@ -150,7 +152,7 @@
                 <li>6</li>
                 <li>12</li>
               </ul>
-              <button>add to cart</button>
+              <button button class="yellow-but">add to cart</button>
           </div>
         </section>
 
@@ -158,12 +160,14 @@
       </main>
       
       <footer>
-        <ul>
-          <li>home</li>
-          <li>pastry</li>
-          <li>contact</li>
+        <ul id="footer-links">
+          <li><a href='bunbun-home.html'>home</a></li>
+          <li><a href='bunbun-home.html#product_lib'>pastry</a></li>
+          <li><a href='bunbun-home.html#home_contact'>contact</a></li>  
         </ul>
-        <h3>FOLLOW US</h3>
+        <div>
+          <p>FOLLOW US</p>
+        </div>
       </footer>
 
     </div>

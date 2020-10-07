@@ -8,6 +8,13 @@ nav{
     text-align: center;
     height: 75px;
     vertical-align:middle;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
   }
 
 section{
@@ -18,6 +25,11 @@ footer {
     background-color:#E9C467;
     text-align: center;
     min-width: 500px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items:center;
+    align-content: center;
   }
 
 
@@ -70,7 +82,7 @@ p{
 }
 
 
-button{
+.yellow-but{
     border-radius: 20px;
     border: solid 2px #E9C467;
     background-color: #E9C467;
@@ -81,10 +93,32 @@ button{
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight:normal; 
+    cursor: pointer;
 }
-button:hover{
+.yellow-but:hover{
     background-color: #7C5B04;
     border:#7C5B04;
+    color: white;
+    transition: 250ms;
+}
+
+
+.white-but{
+    border-radius: 20px;
+    border: solid 2px #E9C467;
+    background-color: white;
+    color:#E9C467;
+    width: 100%;
+    height:28px;
+    text-align: center;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight:normal; 
+    cursor: pointer;
+}
+.white-but:hover{
+    background-color:#E9C467;
     color: white;
     transition: 250ms;
 }
@@ -104,15 +138,17 @@ li, a{
 
 /* navigation */
 
+#nav-links{
+    grid-column: 2/3;
+}
+
 nav ul{
-    padding-top: 24px;
-    padding-left:75px;
     display: inline-block;
     width: 800px;
     margin: auto;
 }
 
-nav li a{
+li a{
     font-family:'Raleway', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -125,7 +161,7 @@ nav li a{
     margin: 5px 40px 5px 40px;
 }
 
-nav li a:hover{
+li a:hover{
     color: #7C5B04;
     transition: 250ms;
 }
@@ -398,5 +434,8 @@ nav li a:hover{
 }
 
 
-/*special ones*/ 
+/*footer styling*/
+#footer-links{
+    grid-column: 2/3;
+}
 

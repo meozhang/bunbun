@@ -35,13 +35,14 @@
 
       <!--Navigation-->
       <nav>
-        <ul>
+        <ul id="nav-links">
           <li><a href='bunbun-home.html'>home</a></li>
           <li><a href='bunbun-home.html#product_lib'>pastry</a></li>
-          <li><a href='bunbun-home.html#home_contact'>contact</a></li>
-          
+          <li><a href='bunbun-home.html#home_contact'>contact</a></li>  
         </ul>
-        <button><a href='bunbun-checkout.html'>cart</a></button>  
+        <div id="nav-cart">
+           <a href='bunbun-checkout.html'><button>cart</button></a>
+        </div>  
       </nav>
   
       <main>
@@ -62,10 +63,10 @@
           <h2>our pastries</h2>
           <div id = "product_filter">
               <ul>
-                <li>all</li>
-                <li>gluten free</li>
-                <li>nutty</li>
-                <li>fruity</li>
+                <li class="sm-button">all</li>
+                <li class="sm-button">gluten free</li>
+                <li class="sm-button">nutty</li>
+                <li class="sm-button">fruity</li>
               </ul>
           </div>
           <!--Product A -->
@@ -256,12 +257,14 @@
       </main>
       
       <footer>
-        <ul>
-          <li>home</li>
-          <li>pastry</li>
-          <li>contact</li>
+        <ul id="footer-links">
+          <li><a href='bunbun-home.html'>home</a></li>
+          <li><a href='bunbun-home.html#product_lib'>pastry</a></li>
+          <li><a href='bunbun-home.html#home_contact'>contact</a></li>  
         </ul>
-        <h3>FOLLOW US</h3>
+        <div>
+          <p>FOLLOW US</p>
+        </div>
       </footer>
 
     </div>
