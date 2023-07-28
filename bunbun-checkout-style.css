@@ -1,3 +1,4 @@
+/* testing changes */ 
 /* sections */ 
 body{
     margin:0px;
@@ -346,7 +347,7 @@ li a:hover{
 #pro_a{
     grid-area: 3/2/4/3;
     width:100%
-    outline: solid 2px black;
+    outline:solid 2px black;
 }
 
 #pro_b{
